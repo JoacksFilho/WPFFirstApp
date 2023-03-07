@@ -5,20 +5,229 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFFirstApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="200" Width="300">
+        Title="MainWindow" Height="400" Width="400">
     <!--<StackPanel>-->
-        <!--<Button
+    <!--<Button
             x:Name="mybutton"
             Content="hello world" Click="mybutton_Click"
             ></Button>-->
-        <!--<TextBlock x:Name="myTextBlock">Hello <Bold>World</Bold> And Hello <Italic>You!</Italic>
+    <!--<TextBlock x:Name="myTextBlock">Hello <Bold>World</Bold> And Hello <Italic>You!</Italic>
             <LineBreak/>
             Go to <Hyperlink RequestNavigate="Hyperlink_RequestNavigate"  NavigateUri="https://www.google.com">google.com</Hyperlink>
         </TextBlock>-->
-        <!--<TextBlock TextWrapping="WrapWithOverflow" Foreground="PaleVioletRed">
+    <!--<TextBlock TextWrapping="WrapWithOverflow" Foreground="PaleVioletRed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
             <Span Foreground="Black">sed do </Span>
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </TextBlock>-->
     <!--</StackPanel>-->
+    <!--<StackPanel>
+        <Label Margin="16, 16, 16, 0" BorderBrush="Black" BorderThickness="1">
+            <StackPanel Orientation="Horizontal">
+                <Image Width="32" Source="https://freeicons.io/technology-icons-401/asset-mail-message-icon-19257" />
+                <AccessText Text="Message"></AccessText>
+            </StackPanel>
+        </Label>
+        <TextBox
+            Margin="16"
+            FontSize="32"             
+        ></TextBox>
+    </StackPanel>-->
+    <!--<StackPanel>
+        <TextBox
+            FontSize="14"
+            Margin="15"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"
+            SpellCheck.IsEnabled="True"
+            Language="en-US"
+            Background="DarkGray"
+            Foreground="Black"
+            Text="Hello Joacks"
+            IsReadOnly="True"
+        />
+    </StackPanel>-->
+    <!--<StackPanel>
+        <Button Name="myButton"
+                Background="Coral"
+                Foreground="Blue"
+                ToolTip="Click her for Register"
+                MouseEnter="myButton_MouseEnter"
+                MouseLeave="myButton_MouseLeave"
+                Width="100" Height="30" MouseDoubleClick="myButton_MouseDoubleClick" Click="Button_Click">Register</Button>
+        <Label FontSize="16" Name="mylabel">Hello World</Label>
+    </StackPanel>-->
+    <!--<StackPanel>
+        <Label FontWeight="Bold">Who do you vote for</Label>
+        <RadioButton x:Name="rbObama" Checked="rbObama_Checked" Unchecked="rbObama_Unchecked" GroupName="Presidents" FontSize="30" VerticalContentAlignment="Center">
+            <WrapPanel>
+                <Image Width="30" Height="30" Source="C:\Users\agger\Downloads\Obama.jpg"/>
+                <Label Name="lbObama">Obama</Label>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton GroupName="Presidents"  FontSize="30" VerticalContentAlignment="Center">
+            <WrapPanel>
+                <Image Width="30" Height="30" Source="C:\Users\agger\Downloads\joe-biden.png"/>
+                <Label>Biden</Label>
+            </WrapPanel>
+        </RadioButton>
+        <RadioButton GroupName="Presidents" FontSize="30" VerticalContentAlignment="Center">
+            <WrapPanel>
+                <Image Width="30" Height="30" Source="C:\Users\agger\Downloads\images.jpg"/>
+                <Label>Trump</Label>
+            </WrapPanel>
+        </RadioButton>
+
+        <Label FontWeight="Bold">How do you feel about it?</Label>
+        <RadioButton GroupName="Felling">Good</RadioButton>
+        <RadioButton GroupName="Felling">Ok</RadioButton>
+        <RadioButton GroupName="Felling">Not Happy</RadioButton>
+    </StackPanel>-->
+    <!--<StackPanel>
+        <Label>Topings</Label>
+        <CheckBox x:Name="cbParent" IsThreeState="True" Checked="cbParentCheckedChanged" Unchecked="cbParent_Unchecked" >Select All</CheckBox>
+        <CheckBox  Name="cbCheese" Margin="15, 5" Checked="cbTopingsCheckedChanged" Unchecked="cbTopingsCheckedChanged">Extra Cheese</CheckBox>
+        <CheckBox  Name="cbPeperoni" Unchecked="cbTopingsCheckedChanged"  Checked="cbTopingsCheckedChanged" Margin="15, 5">Peperoni</CheckBox>
+        <CheckBox Name="cbChocolate" Margin="15, 5">Chocolate</CheckBox>
+        <CheckBox Name="cbHam" Margin="15, 5">Ham</CheckBox>
+    </StackPanel>-->
+
+    <!--Password box-->
+
+    <!--<StackPanel Margin="10">
+        <Label FontSize="20">Name: </Label>
+        <TextBox FontSize="20"></TextBox>
+        <Label FontSize="20">Password: </Label>
+        <PasswordBox FontSize="20" PasswordChar="*" MaxLength="6"></PasswordBox>
+    </StackPanel>-->
+
+    <!--Image Control-->
+    <!--<StackPanel>
+        <Image Name="myImage" MouseUp="Image_MouseUp" Width="100" Source="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png" Height="225"></Image>
+    </StackPanel>-->
+    <!--<StackPanel VerticalAlignment="Center" Margin="20">
+        <Slider 
+            x:Name="mySlider" Maximum="100" TickPlacement="BottomRight" TickFrequency="10"
+                IsSnapToTickEnabled="True" 
+                Value="50"
+            ValueChanged="mySlider_ValueChanged"
+                ></Slider>
+        <TextBlock x:Name="myTextBlock" FontSize="{Binding ElementName=mySlider, Path=Value, UpdateSourceTrigger=PropertyChanged}">
+            Hello Colombia
+        </TextBlock>
+    </StackPanel>-->
+    <!--<StackPanel>
+        <Viewbox Stretch="Uniform">
+            <Calendar
+                SelectedDate="01.01.2023"
+                x:Name="myCalendar"
+                SelectedDatesChanged="myCalendar_SelectedDatesChanged"
+                ></Calendar>
+        </Viewbox>
+        <TextBlock x:Name="myTextBLock"></TextBlock>
+        
+    </StackPanel>-->
+    <!--<Grid>
+        <DatePicker 
+            SelectedDate="03/01/2021"
+            SelectedDateFormat="Long"
+            SelectedDateChanged="DatePicker_SelectedDateChanged"
+        ></DatePicker>
+    </Grid>-->
+    <!--<StackPanel>
+        <Expander>
+            <Expander.Header>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock>Click me to expand and again to hide my content</TextBlock>
+                </StackPanel>
+            </Expander.Header>
+            <StackPanel>
+                <Button>Click me</Button>
+                <DatePicker></DatePicker>
+                <TextBlock TextWrapping="Wrap" FontSize="20">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </TextBlock>
+            </StackPanel>
+        </Expander>
+    </StackPanel>-->
+    <!--<Grid> -->
+    <!--default element-->
+    <!--
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.33*"/>
+            <ColumnDefinition Width="0.33*"/>
+            <ColumnDefinition Width="0.33*"/>
+            <ColumnDefinition Width="0.33*"/> -->
+    <!-- Auto atribui a largura que a o atributo filho possuir-->
+    <!--
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Grid.RowSpan="2" Background="Blue" >Button 00</Button>
+
+        <Button Grid.Column="2" Grid.Row="1"  Grid.ColumnSpan="2" Background="Yellow">Button 12</Button>
+        <Button Grid.Column="2" Grid.Row="0">Button 02</Button>
+        <Button Grid.Column="3" Grid.Row="0">Button 03</Button>
+        
+        <Button Grid.Column="0" Grid.Row="2" >Button 20</Button>
+        <Button Grid.Column="1" Grid.Row="2" >Button 21</Button>
+        <Button Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" Background="Green" >Button 22</Button>
+        
+    </Grid>-->
+    <!--<ScrollViewer>
+        <StackPanel
+        Orientation="Vertical"
+        >
+            -->
+    <!--StackPanel - You can stack elements on top or next each other-->
+    <!--
+            <Button HorizontalAlignment="Center">Button 1</Button>
+            <Button HorizontalAlignment="Center">Button 2</Button>
+            <Button HorizontalAlignment="Center">Button 3</Button>
+            <Button HorizontalAlignment="Center">Button 4</Button>
+            -->
+    <!--Stretch by default-->
+    <!--
+
+            <Button HorizontalAlignment="Center">Button 1</Button>
+            <Button HorizontalAlignment="Center">Button 2</Button>
+            <Button HorizontalAlignment="Center">Button 3</Button>
+            <Button HorizontalAlignment="Center">Button 4</Button>
+
+            <Button HorizontalAlignment="Center">Button 1</Button>
+            <Button HorizontalAlignment="Center">Button 2</Button>
+            <Button HorizontalAlignment="Center">Button 3</Button>
+            <Button HorizontalAlignment="Center">Button 4</Button>
+
+        </StackPanel>
+    </ScrollViewer>-->
+    <!--<WrapPanel > -->
+    <!--Altura fica definada para toda linha. Caso não haja mais espaço, o item é jogado para proxima linha. Orientation by default is vertical-->
+    <!--
+        <Button Width="100" Height="100">Click me</Button>
+        <Button>Click me</Button>
+        <Button>Click me</Button>
+        <Button>Click me</Button>
+        <Button>Click me</Button>
+        <Button>Click me</Button>
+        <Button>Click me</Button>
+    </WrapPanel>-->
+    <!--<DockPanel LastChildFill="False"> -->
+    <!--You can dock your itens in a particular position / lastchildfill = false doesnt fill the hole empty space or entire screen-->
+    <!--
+        <Button DockPanel.Dock="Top">Top</Button>
+        <Button DockPanel.Dock="Right">Right</Button>
+        <Button DockPanel.Dock="Left">Left</Button>
+        <Button DockPanel.Dock="Bottom">Bottom</Button>
+        <Image Source="https://upload.wikimedia.org/wikipedia/en/0/02/Homer_Simpson_2006.png"></Image>
+    </DockPanel>-->
+    <Canvas>
+        <Button Canvas.Left="5">Top Left Button</Button>
+        <Button Canvas.Right="5">Top Right Button</Button>
+        <Rectangle Panel.ZIndex="1" Width="100" Height="100" Fill="Aqua" Canvas.Bottom="0" Canvas.Right="0"></Rectangle>
+        <Rectangle Panel.ZIndex="0" Width="100" Height="100" Fill="Red" Canvas.Bottom="50" Canvas.Right="50"></Rectangle>
+    </Canvas>
 </Window>
